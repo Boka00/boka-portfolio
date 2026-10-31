@@ -14,7 +14,7 @@
 
 <br />
 
-[**Explore Live Demo »**](https://your-portfolio-url.com) · [Report Bug](https://github.com/Boka00/boka-portfolio/issues) · [Request Feature](https://github.com/Boka00/boka-portfolio/issues)
+[**Explore Live Demo »**](https://boka-portfolio.vercel.app/) · [Report Bug](https://github.com/Boka00/boka-portfolio/issues) · [Request Feature](https://github.com/Boka00/boka-portfolio/issues)
 
 </div>
 
@@ -23,7 +23,7 @@
 ## 📸 Preview
 
 <div align="center">
-  <img src="https://via.placeholder.com/1200x630.png?text=Portfolio+UI+Preview+-+Desktop+%26+Mobile+Mockups" alt="Portfolio Preview" width="100%" />
+  <img width="1265" height="725" alt="image" src="https://github.com/user-attachments/assets/8d4a0e7b-062a-485c-af79-d096ff916f40" />
 </div>
 
 ---
