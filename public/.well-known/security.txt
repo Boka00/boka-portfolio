@@ -1,0 +1,7 @@
+Contact: mailto:boka.mkrtichiani@gmail.com
+Contact: https://github.com/Boka00/boka-portfolio/security/advisories/new
+Expires: 2027-10-31T23:59:59.000Z
+Preferred-Languages: en, ka
+Canonical: https://boka-portfolio.vercel.app/.well-known/security.txt
+Policy: https://github.com/Boka00/boka-portfolio/blob/main/SECURITY.md
+

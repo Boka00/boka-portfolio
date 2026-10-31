@@ -387,3 +387,4 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
     </AnimatePresence>
   );
 };
+

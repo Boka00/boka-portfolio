@@ -11,10 +11,9 @@ export default defineConfig({
         manualChunks: {
           vendor: ['react', 'react-dom'],
           motion: ['framer-motion'],
-          forms: ['formik', 'yup'],
+          forms: ['formik', 'yup', '@formspree/react'],
         },
       },
     },
   },
 });
-

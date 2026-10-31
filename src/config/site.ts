@@ -1,6 +1,31 @@
 /**
+ * Resolves the public Formspree form hashid from environment variables first,
+ * falling back to the portfolio's public form ID ('xwllrpla').
+ *
+ * Security note: A Formspree form ID is a public client identifier (like an HTML form action),
+ * NOT a private API key. Protect it in Formspree Settings -> Restrict to Domain (boka-portfolio.vercel.app).
+ */
+function resolveFormspreeFormId(): string {
+  const explicitId = import.meta.env.VITE_FORMSPREE_FORM_ID?.trim();
+  if (explicitId && explicitId !== 'YOUR_FORMSPREE_ID') {
+    return explicitId;
+  }
+
+  const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT?.trim();
+  if (endpoint && !endpoint.includes('YOUR_FORMSPREE_ID')) {
+    const match = endpoint.match(/\/f\/([a-zA-Z0-9]+)\/?$/);
+    if (match?.[1]) {
+      return match[1];
+    }
+  }
+
+  return 'xwllrpla';
+}
+
+const FORMSPREE_FORM_ID = resolveFormspreeFormId();
+
+/**
  * Centralized site & personalization configuration.
- * Update CV path, Formspree endpoint, or social URLs in this single file.
  */
 export const SITE_CONFIG = {
   fullName: 'Boris Mkrtichiani',
@@ -29,16 +54,9 @@ export const SITE_CONFIG = {
     linkedinHandle: 'in/boris-mkrtichiani',
   },
   /**
-   * [PERSONALIZE]: Drop your PDF resume into /public/Boris-Mkrtichiani-CV.pdf
-   * or update this path to an external Google Drive / Notion resume URL.
+   * Drop your final PDF resume into /public/Boris-Mkrtichiani-CV.pdf
    */
   cvUrl: '/Boris-Mkrtichiani-CV.pdf',
-  /**
-   * [PERSONALIZE]: Replace YOUR_FORMSPREE_ID below or set VITE_FORMSPREE_ENDPOINT in .env
-   * Create a free endpoint in 30 seconds at https://formspree.io
-   */
-  formspreeEndpoint:
-    import.meta.env.VITE_FORMSPREE_ENDPOINT ||
-    'https://formspree.io/f/YOUR_FORMSPREE_ID',
+  formspreeFormId: FORMSPREE_FORM_ID,
+  formspreeEndpoint: `https://formspree.io/f/${FORMSPREE_FORM_ID}`,
 } as const;
-

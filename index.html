@@ -15,19 +15,21 @@
     <meta name="author" content="Boris Mkrtichiani" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0A0A0F" id="meta-theme-color" />
+    <link rel="canonical" href="https://boka-portfolio.vercel.app/" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://boka-portfolio.vercel.app/" />
     <meta property="og:site_name" content="Boris Mkrtichiani Portfolio" />
     <meta property="og:title" content="Boris 'Boka' Mkrtichiani — Front-End & React Developer" />
     <meta
       property="og:description"
       content="I build clean, modular, and responsive web apps with strong component architecture, type safety, and intuitive interfaces."
     />
-    <meta property="og:image" content="/og-cover.svg" />
+    <meta property="og:image" content="https://boka-portfolio.vercel.app/og-cover.svg" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
@@ -37,7 +39,7 @@
       name="twitter:description"
       content="Clean, modular, and responsive web apps built with React, TypeScript, and modern UI engineering."
     />
-    <meta name="twitter:image" content="/og-cover.svg" />
+    <meta name="twitter:image" content="https://boka-portfolio.vercel.app/og-cover.svg" />
 
     <!-- Fonts: Space Grotesk, Inter, JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,13 +49,14 @@
       rel="stylesheet"
     />
 
-    <!-- JSON-LD Person Schema -->
+    <!-- JSON-LD Person Schema (non-executable data block; CSP script-src 'self' safe) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Boris Mkrtichiani",
         "alternateName": "Boka",
+        "url": "https://boka-portfolio.vercel.app/",
         "jobTitle": "Front-End / React Developer",
         "description": "Front-End & React Developer building clean, modular, and responsive web applications with strong component architecture, type safety, and intuitive interfaces.",
         "email": "mailto:boka.mkrtichiani@gmail.com",
@@ -80,31 +83,11 @@
       }
     </script>
 
-    <!-- Zero-FOUC Theme Initialization (Dark by default, respects saved preference & system changes) -->
-    <script>
-      (function () {
-        try {
-          var saved = localStorage.getItem('boka-portfolio-theme');
-          var theme = saved === 'light' || saved === 'dark' ? saved : 'dark';
-          var root = document.documentElement;
-          if (theme === 'dark') {
-            root.classList.add('dark');
-          } else {
-            root.classList.remove('dark');
-          }
-          var meta = document.getElementById('meta-theme-color');
-          if (meta) {
-            meta.setAttribute('content', theme === 'dark' ? '#0A0A0F' : '#F8FAFC');
-          }
-        } catch (e) {
-          document.documentElement.classList.add('dark');
-        }
-      })();
-    </script>
+    <!-- Zero-FOUC Theme Init loaded from same-origin file so CSP script-src 'self' needs no unsafe-inline -->
+    <script src="/theme-init.js"></script>
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased selection:bg-violet-500/30 selection:text-violet-950 dark:bg-[#0A0A0F] dark:text-slate-100 dark:selection:bg-violet-500/30 dark:selection:text-cyan-200">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
