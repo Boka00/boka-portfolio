@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boris "Boka" Mkrtichiani — Front-End &amp; React Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Boris 'Boka' Mkrtichiani, a Front-End & React Developer in Georgia building clean, modular, type-safe web applications with React, TypeScript, and Tailwind CSS."
+    />
+    <meta
+      name="keywords"
+      content="Boris Mkrtichiani, Boka Mkrtichiani, Front-End Developer, React Developer, TypeScript Developer, Georgia, Web Developer Portfolio"
+    />
+    <meta name="author" content="Boris Mkrtichiani" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0A0A0F" id="meta-theme-color" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Boris Mkrtichiani Portfolio" />
+    <meta property="og:title" content="Boris 'Boka' Mkrtichiani — Front-End & React Developer" />
+    <meta
+      property="og:description"
+      content="I build clean, modular, and responsive web apps with strong component architecture, type safety, and intuitive interfaces."
+    />
+    <meta property="og:image" content="/og-cover.svg" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Boris 'Boka' Mkrtichiani — Front-End & React Developer" />
+    <meta
+      name="twitter:description"
+      content="Clean, modular, and responsive web apps built with React, TypeScript, and modern UI engineering."
+    />
+    <meta name="twitter:image" content="/og-cover.svg" />
+
+    <!-- Fonts: Space Grotesk, Inter, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD Person Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Boris Mkrtichiani",
+        "alternateName": "Boka",
+        "jobTitle": "Front-End / React Developer",
+        "description": "Front-End & React Developer building clean, modular, and responsive web applications with strong component architecture, type safety, and intuitive interfaces.",
+        "email": "mailto:boka.mkrtichiani@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "GE"
+        },
+        "sameAs": [
+          "https://github.com/Boka00",
+          "https://www.linkedin.com/in/boris-mkrtichiani/"
+        ],
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "JavaScript (ES6+)",
+          "Tailwind CSS",
+          "SCSS",
+          "CSS Modules",
+          "Formik",
+          "Yup",
+          "REST APIs",
+          "Component Architecture"
+        ]
+      }
+    </script>
+
+    <!-- Zero-FOUC Theme Initialization (Dark by default, respects saved preference & system changes) -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('boka-portfolio-theme');
+          var theme = saved === 'light' || saved === 'dark' ? saved : 'dark';
+          var root = document.documentElement;
+          if (theme === 'dark') {
+            root.classList.add('dark');
+          } else {
+            root.classList.remove('dark');
+          }
+          var meta = document.getElementById('meta-theme-color');
+          if (meta) {
+            meta.setAttribute('content', theme === 'dark' ? '#0A0A0F' : '#F8FAFC');
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-violet-500/30 selection:text-violet-950 dark:bg-[#0A0A0F] dark:text-slate-100 dark:selection:bg-violet-500/30 dark:selection:text-cyan-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

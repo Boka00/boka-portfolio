@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="coreGrad" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="55%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0A0A0F" stroke="url(#coreGrad)" stroke-width="2.5" />
+  <path
+    d="M14 14L20 14M14 14L14 20M50 14L44 14M50 14L50 20M14 50L20 50M14 50L14 44M50 50L44 50M50 50L50 44"
+    stroke="#06B6D4"
+    stroke-opacity="0.55"
+    stroke-width="1.5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M22 18H35.5C40.2 18 43.5 20.6 43.5 24.8C43.5 27.7 41.8 29.8 39.1 30.8C42.5 31.7 44.8 34.2 44.8 37.9C44.8 42.8 41 46 35.4 46H22V18ZM27.8 29H34.4C36.8 29 38.2 27.8 38.2 25.8C38.2 23.8 36.8 22.7 34.4 22.7H27.8V29ZM27.8 41.2H34.9C37.6 41.2 39.2 39.9 39.2 37.6C39.2 35.3 37.6 34 34.9 34H27.8V41.2Z"
+    fill="url(#coreGrad)"
+  />
+</svg>
+
