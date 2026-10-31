@@ -15,7 +15,9 @@ export type SkillIconKey =
   | 'yup'
   | 'git'
   | 'github'
-  | 'restapi';
+  | 'restapi'
+  | 'vite'
+  | 'security';
 
 export interface SkillItem {
   name: string;
@@ -70,13 +72,23 @@ export interface ProjectItem {
   caseStudy: ProjectCaseStudy;
 }
 
+export interface CertificationItem {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  credentialId?: string;
+  distinction?: string;
+  skills: string[];
+}
+
 export interface JourneyItem {
   id: string;
   code: string;
   period: string;
   title: string;
   organization: string;
-  category: 'Specialization' | 'Project Engineering' | 'Foundations';
+  category: 'Education' | 'Specialization' | 'Certification';
   description: string;
   highlights: string[];
   tags: string[];

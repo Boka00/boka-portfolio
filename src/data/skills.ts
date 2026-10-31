@@ -4,8 +4,8 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     id: 'languages',
     code: 'MOD // 01',
-    title: 'Core Languages',
-    subtitle: 'Type-safe application logic, semantic document structure, and scalable styling layers.',
+    title: 'Languages & Core',
+    subtitle: 'Type-safe application logic, semantic HTML5 markup, and scalable CSS/SCSS architecture.',
     items: [
       {
         name: 'TypeScript',
@@ -14,22 +14,22 @@ export const SKILL_GROUPS: SkillGroup[] = [
       },
       {
         name: 'JavaScript (ES6+)',
-        context: 'Async workflows, closures & modular state logic',
+        context: 'Async/await workflows, state normalization & closures',
         iconKey: 'javascript',
       },
       {
         name: 'HTML5',
-        context: 'Semantic landmarks & WCAG AA accessibility',
+        context: 'Semantic landmarks & WCAG AA accessibility (a11y)',
         iconKey: 'html5',
       },
       {
         name: 'CSS3',
-        context: 'Grid, Flexbox, custom properties & fluid layouts',
+        context: 'Grid, Flexbox, custom properties & fluid responsive UI',
         iconKey: 'css3',
       },
       {
-        name: 'SCSS',
-        context: 'Modular partials, mixins, tokens & BEM architecture',
+        name: 'SASS / SCSS',
+        context: 'Modular partials, mixins, BEM & Bootstrap systems',
         iconKey: 'scss',
       },
     ],
@@ -37,32 +37,32 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     id: 'frameworks',
     code: 'MOD // 02',
-    title: 'Frameworks & Styling',
-    subtitle: 'Composable React UI systems, schema-driven forms, and utility or scoped styling.',
+    title: 'Frameworks & UI Systems',
+    subtitle: 'Composable React interfaces, schema-driven forms, and dark/light design tokens.',
     items: [
       {
-        name: 'React',
-        context: 'Custom hooks, context architecture & state composition',
+        name: 'React.js',
+        context: 'Hooks, custom hooks, Context API & feature architecture',
         iconKey: 'react',
       },
       {
         name: 'Tailwind CSS',
-        context: 'Design-token theming, dark/light systems & responsive UI',
+        context: 'Tokenized theming, persistent dark/light modes & B2B UI',
         iconKey: 'tailwind',
       },
       {
         name: 'CSS Modules',
-        context: 'Zero-collision component-scoped styles',
+        context: 'Zero-collision component-scoped style encapsulation',
         iconKey: 'cssmodules',
       },
       {
         name: 'Formik',
-        context: 'Controlled form state, touched tracking & async submission',
+        context: 'Controlled form lifecycles, touched state & async submit',
         iconKey: 'formik',
       },
       {
         name: 'Yup',
-        context: 'Declarative schema validation & custom error feedback',
+        context: 'Declarative schema validation & accessible error states',
         iconKey: 'yup',
       },
     ],
@@ -70,25 +70,34 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     id: 'workflow',
     code: 'MOD // 03',
-    title: 'Workflow & Integration',
-    subtitle: 'Version-controlled engineering workflows and resilient REST API integration.',
+    title: 'Workflow, APIs & Security',
+    subtitle: 'Modern Vite tooling, RESTful CRUD integration, and OWASP-informed web security.',
     items: [
       {
-        name: 'Git',
-        context: 'Clean commit history, feature branching & conflict resolution',
-        iconKey: 'git',
+        name: 'RESTful APIs',
+        context: 'Full CRUD sync, async filtering, CSV export & error guards',
+        iconKey: 'restapi',
       },
       {
-        name: 'GitHub',
-        context: 'Repository management, code reviews & deployment pipelines',
+        name: 'Git & GitHub',
+        context: 'Branching workflows, CI/CodeQL gates & Agile/Scrum collaboration',
         iconKey: 'github',
       },
       {
-        name: 'REST APIs',
-        context: 'Async fetching, error/loading states, filtering & CRUD sync',
-        iconKey: 'restapi',
+        name: 'Vite & NPM',
+        context: 'Fast ESM bundling, chunk splitting & deterministic lockfiles',
+        iconKey: 'vite',
+      },
+      {
+        name: 'Web Security (OWASP)',
+        context: 'XSS/injection defense, strict CSP/HSTS headers & SSL/TLS',
+        iconKey: 'security',
+      },
+      {
+        name: 'Git CLI',
+        context: 'Clean atomic commits, rebasing & version hygiene',
+        iconKey: 'git',
       },
     ],
   },
 ];
-

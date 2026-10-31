@@ -72,19 +72,26 @@ export const About: React.FC = () => {
               </div>
 
               <p className="text-sm leading-relaxed text-slate-600 sm:text-base dark:text-slate-300">
-                I&apos;m a Front-End Developer based in Georgia who enjoys turning intricate product
-                requirements—like Kanban CRM pipelines, normalized bookmark tag engines, and
-                150-question interactive quiz states—into clean, predictable React applications.
+                I&apos;m a Front-End Developer in Tbilisi, Georgia (studying Information Technology
+                at Georgian Technical University and trained at 10X College) building B2B SaaS
+                interfaces, CRMs, dashboards, and normalized data-management workspaces with
+                React.js, TypeScript, and Tailwind CSS.
               </p>
               <p className="mt-3.5 text-sm leading-relaxed text-slate-600 sm:text-base dark:text-slate-300">
-                Rather than treating styling or validation as an afterthought, I build interfaces
-                from composable primitives, strict TypeScript contracts, and schema-backed forms so
-                codebases remain easy for teams to extend months later.
+                Backed by certified training in Ethical Hacking &amp; Web Security (AlgoUni, OWASP
+                Top 10) and Cisco Networking Academy, I pair composable component architecture and
+                Formik/Yup schema validation with security-first front-end practices like strict CSP
+                headers and XSS-safe data flows.
               </p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2 border-t border-slate-200/80 pt-5 dark:border-white/[0.07]">
-              {['Modular Components', 'Strict TypeScript', 'WCAG AA Contrast', 'Mobile-First UI'].map(
+              {[
+                'Modular Components',
+                'Strict TypeScript',
+                'OWASP & CSP Aware',
+                'WCAG AA Contrast',
+              ].map(
                 (pill) => (
                   <span
                     key={pill}

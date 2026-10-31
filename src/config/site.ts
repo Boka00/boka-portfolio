@@ -38,7 +38,7 @@ export const SITE_CONFIG = {
   ] as const,
   tagline:
     'I build clean, modular, and responsive web apps with strong component architecture, type safety, and intuitive interfaces.',
-  location: 'Georgia',
+  location: 'Tbilisi, Georgia',
   timezone: 'UTC+4 (GET)',
   coordinates: '41.7151° N, 44.8271° E',
   availability: {

@@ -11,9 +11,11 @@ import {
   Layers,
   LayoutGrid,
   Palette,
+  ShieldCheck,
   Sliders,
   Sparkles,
   Terminal,
+  Zap,
 } from 'lucide-react';
 import { SKILL_GROUPS } from '../../data/skills';
 import type { SkillIconKey } from '../../types/portfolio';
@@ -48,6 +50,10 @@ function renderSkillIcon(iconKey: SkillIconKey): React.ReactNode {
       return <Github {...iconProps} />;
     case 'restapi':
       return <Globe {...iconProps} />;
+    case 'vite':
+      return <Zap {...iconProps} />;
+    case 'security':
+      return <ShieldCheck {...iconProps} />;
   }
 }
 

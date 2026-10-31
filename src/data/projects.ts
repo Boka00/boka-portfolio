@@ -175,7 +175,7 @@ export const PROJECTS: ProjectItem[] = [
     ],
     techStack: ['React', 'REST API', 'CSS / SCSS'],
     filterTags: ['React', 'SCSS / CSS', 'REST API'],
-    repoUrl: 'https://github.com/Boka00/REST-Countries-API',
+    repoUrl: 'https://github.com/Boka00/rest-countries-api',
     liveUrl: undefined,
     imageUrl: undefined,
     imageAlt: 'REST Countries Explorer showing country statistics cards, search input, and region filter',
